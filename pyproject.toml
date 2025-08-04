@@ -1,0 +1,27 @@
+[project]
+name = "web-rag-langgraph"
+version = "0.0.1"
+dependencies = [
+    "boto3==1.37.16", #Para el uso de los servicios AWS
+    "mangum==0.19.0", # para ejecutar el contenedor en una Lambda
+    "uvicorn==0.34.0", # Para ejecutar el servicio
+    "langchain-chroma==0.2.2",
+    "langchain-aws==0.2.16",
+    "langchain-community==0.3.20",
+    "fastapi==0.115.11",
+    "beautifulsoup4==4.13.4",
+    "lxml",
+    "python-dotenv",
+    "langgraph",
+    "graphviz",
+    "pygraphviz ",
+]
+requires-python = ">=3.11"
+authors = [
+  {name = "Andres Ortiz", email = "candresortizm@gmail.com"}
+]
+maintainers = [
+  {name = "Andres Ortiz", email = "candresortizm@gmail.com"}
+]
+description = "Proyecto RAG para webs de documentación"
+readme = "README.md"
