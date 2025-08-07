@@ -34,6 +34,10 @@ class HistorialModel(BaseModel):
             print("ClientError", e.response["Error"]["Message"])
             raise e
 
+    def as_ddb_item(self):
+        item = {k: v for k, v in self.dict().items() if v is not None}
+        return item
+
     @classmethod
     def get_item(cls: "HistorialModel", chat_id: str) -> "HistorialModel":
         try:
