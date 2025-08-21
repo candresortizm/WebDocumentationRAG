@@ -23,8 +23,6 @@ v1_router = APIRouter(prefix="/api/v1")
 origins = [
     "http://localhost:8000",
     "http://localhost:5000", #Para el consumo desde el proyecto frontend
-    "https://gestiondeinformacion.unal.edu.co:8000",
-    "https://gestiondeinformacion.unal.edu.co"
 ]
 
 app.add_middleware(
